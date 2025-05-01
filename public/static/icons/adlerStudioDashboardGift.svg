@@ -1,0 +1,11 @@
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="edit">
+<g id="Group 116">
+<rect id="Rectangle 266" x="10.5" y="14.5" width="25" height="7" rx="1.5" stroke="white"/>
+<path id="Rectangle 267" d="M12.5 21.5H33.5V34C33.5 34.8284 32.8284 35.5 32 35.5H14C13.1716 35.5 12.5 34.8284 12.5 34V21.5Z" stroke="white"/>
+<path id="Ellipse 497" d="M23 14C23 11.7909 21.2091 10 19 10C16.7909 10 15 11.7909 15 14" stroke="white"/>
+<path id="Ellipse 498" d="M31 14C31 11.7909 29.2091 10 27 10C24.7909 10 23 11.7909 23 14" stroke="white"/>
+<line id="Line 40" x1="23" y1="22" x2="23" y2="35" stroke="white" stroke-width="2"/>
+</g>
+</g>
+</svg>

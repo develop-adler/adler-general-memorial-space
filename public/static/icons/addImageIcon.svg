@@ -1,0 +1,10 @@
+<svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 93">
+<rect id="Rectangle 137" y="4" width="26" height="22" fill="#CCCCCC"/>
+<rect id="Rectangle 136" x="4" width="26" height="22" fill="#333333"/>
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M14 8C15.1046 8 16 7.10457 16 6C16 4.89543 15.1046 4 14 4C12.8954 4 12 4.89543 12 6C12 7.10457 12.8954 8 14 8ZM18.4989 7.07736C18.8956 6.49244 19.7574 6.49244 20.1541 7.07736L25.8251 15.4387C26.2755 16.1027 25.7998 17 24.9975 17H13.6555C12.9194 17 12.4582 16.2446 12.735 15.6071H9.00553C8.21581 15.6071 7.73771 14.7347 8.16263 14.0691L10.7835 9.9633C11.1767 9.34739 12.0762 9.34739 12.4693 9.9633L14.4437 13.0563L18.4989 7.07736Z" fill="white"/>
+<path id="Union_2" fill-rule="evenodd" clip-rule="evenodd" d="M3 4H1H0V5V7H1V5H3V4Z" fill="#333333"/>
+<path id="Union_3" fill-rule="evenodd" clip-rule="evenodd" d="M23 26L25 26L26 26L26 25L26 23L25 23L25 25L23 25L23 26Z" fill="#333333"/>
+<path id="Union_4" fill-rule="evenodd" clip-rule="evenodd" d="M3 26L1 26L0 26L8.74228e-08 25L2.62269e-07 23L1 23L1 25L3 25L3 26Z" fill="#333333"/>
+</g>
+</svg>
