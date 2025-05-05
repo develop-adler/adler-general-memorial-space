@@ -109,8 +109,6 @@ export class Gift {
           elapsedTime += delta * 2;
         }
       );
-
-      this.scene3D.gifts.push(this);
     };
 
     const container = this.scene3D.giftAssetContainers.get(trinketIdToLoad);
@@ -427,8 +425,6 @@ export class Gift {
   async createCardTexture(): Promise<void> {
     return new Promise<void>((resolve) => {
       if (!this.card) return;
-
-      console.log("this.card", this.card);
 
       // dispose existing material and texture
       this.card.material?.dispose(true, true);

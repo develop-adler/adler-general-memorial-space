@@ -235,7 +235,19 @@ export class Scene3D {
         const uniqueObjects: PostTrinket[] = [];
         const uniqueIds: string[] = [];
 
-        postGiftsJSON.results.forEach((gift) => {
+        const getRandomHundredGifts = <T>(array: T[], max: number = 150): T[] => {
+            const copy = [...array]; // avoid mutating original
+            for (let i = copy.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [copy[i], copy[j]] = [copy[j], copy[i]];
+            }
+            return copy.slice(0, max);
+        };
+
+        // randomly get 100 gifts from the list of gifts
+        const randomGifts = getRandomHundredGifts<PostTrinket>(postGiftsJSON.results);
+
+        randomGifts.forEach((gift) => {
             if (uniqueIds.includes(gift.trinketId)) {
                 repeatedObjects.push(gift);
             } else {
@@ -247,11 +259,13 @@ export class Scene3D {
         Promise.all(
             uniqueObjects.map(async (trinket) => {
                 const gift = new Gift(this, trinket);
+                this.gifts.push(gift);
                 return gift.loadTrinketModel(trinket.trinketId).then(() => {
                     repeatedObjects.forEach((repeatedTrinket) => {
                         if (repeatedTrinket.trinketId !== trinket.trinketId) return;
-                        const gift = new Gift(this, repeatedTrinket);
-                        gift.loadTrinketModel(repeatedTrinket.trinketId);
+                        const clonedGift = new Gift(this, repeatedTrinket);
+                        this.gifts.push(clonedGift);
+                        clonedGift.loadTrinketModel(repeatedTrinket.trinketId);
                     });
                 });
             })
