@@ -107,6 +107,8 @@ export const COLOR = {
   studioZGizmo: "#2D49FC",
   studioZGizmoSub: "#1D2FA1",
 
+  newAdlerDarkBackground: "#111111",
+
   interactionWheelBackground: `rgba(17, 17, 17, 0.60)`,
   interactionWheelCircleBorder: `rgba(255, 255, 255, 0.10)`,
   interactionWheelDivider: `rgba(255, 255, 255, 0.15)`,
