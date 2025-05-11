@@ -4,7 +4,7 @@ import { styled } from "@mui/material";
 
 export const Container = styled("div")({
     position: 'relative',
-    zIndex: 10,
+    zIndex: 100,
     width: '54%',
     display: 'flex',
     flexDirection: 'column',
@@ -31,9 +31,13 @@ export const ComingSoonTextContainer = styled("div")({
         fontSize: '16px',
         textAlign: 'center',
     },
-    '@media (max-width: 600px)': {
+    '@media (max-width: 400px)': {
         fontSize: '14px',
-        lineHeight: '20px', /* 142.857% */
+        lineHeight: '28px', /* 142.857% */
+    },
+    '@media (max-width: 345px)': {
+        fontSize: '12px',
+        lineHeight: '24px', /* 142.857% */
     }
 });
 
@@ -58,9 +62,13 @@ export const NewAdlerTextContainer = styled("div")({
         lineHeight: '44px', /* 122.222% */
         textTransform: 'capitalize'
     },
-    '@media (max-width: 600px)': {
-        fontSize: '28px',
-        lineHeight: '36px', /* 128.571% */
+    '@media (max-width: 400px)': {
+        fontSize: '32px',
+        lineHeight: '38px', /* 128.571% */
+    },
+    '@media (max-width: 345px)': {
+        fontSize: '24px',
+        lineHeight: '32px', /* 128.571% */
     }
 });
 
@@ -76,8 +84,12 @@ export const DetailTextContainer = styled("div")({
         fontSize: '16px',
         lineHeight: '24px'
     },
-    '@media (max-width: 600px)': {
+    '@media (max-width: 400px)': {
         fontSize: '14px',
+        lineHeight: '24px', /* 142.857% */
+    },
+    '@media (max-width: 345px)': {
+        fontSize: '12px',
         lineHeight: '20px', /* 142.857% */
     }
 });
@@ -97,14 +109,12 @@ export const EmailSectionContainer = styled("div")({
     height: '72px',
     display: 'flex',
     borderRadius: '40px',
-    opacity: 0.72,
     background: COLOR.white,
     boxShadow: '0px 1px 4px 0px rgba(0, 0, 0, 0.20) inset',
     '@media (max-width: 1200px)': {
         width: '100%',
         height: '44px',
         maxWidth: '591px',
-        opacity: 1,
     }
 });
 
@@ -126,14 +136,23 @@ export const EmailSectionInput = styled("input")({
     '&::placeholder': {
         color: 'rgba(17, 17, 17, 0.30)',
     },
+    '&:focus': {
+        outline: 'none',
+        boxShadow: 'none',
+        backgroundColor: 'transparent',
+    },
     '@media (max-width: 1200px)': {
         width: '58%',
         fontSize: '16px',
         height: '44px',
     },
-    '@media (max-width: 600px)': {
+    '@media (max-width: 400px)': {
         fontSize: '14px',
-        lineHeight: '20px', /* 142.857% */
+        lineHeight: '28.976px', /* 142.857% */
+    },
+    '@media (max-width: 345px)': {
+        fontSize: '12px',
+        lineHeight: '24px', /* 142.857% */
     }
 });
 
@@ -171,9 +190,13 @@ export const EmailSectionButton = styled("button")({
         fontSize: '16px',
         height: '44px',
     },
-    '@media (max-width: 600px)': {
+    '@media (max-width: 400px)': {
         fontSize: '14px',
-        lineHeight: '20px', /* 142.857% */
+        lineHeight: '28.976px', /* 142.857% */
+    },
+    '@media (max-width: 345px)': {
+        fontSize: '12px',
+        lineHeight: '24px', /* 142.857% */
     }
 });
 
