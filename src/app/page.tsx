@@ -1,7 +1,7 @@
-import { PostPage } from "@/components/views/posts";
+import { RandomChat } from "@/components/views/random-chat";
 
 export default function Home() {
   return (
-    <PostPage />
+    <RandomChat />
   )
 }

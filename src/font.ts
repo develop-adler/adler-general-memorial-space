@@ -1,4 +1,4 @@
-// import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import localFont from "next/font/local";
 
 // export const ubuntuFontSetting = Ubuntu({
@@ -7,11 +7,11 @@ import localFont from "next/font/local";
 //   subsets: ['latin'],
 // });
 
-// export const interFontSetting = Inter({
-//   weight: ['300', '400', '500', '700'],
-//   variable: '--inter',
-//   subsets: ['latin'],
-// });
+export const notoSansFontSetting = Noto_Sans({
+  weight: ['300', '400', '500', '700'],
+  variable: '--noto-sans',
+  subsets: ['latin'],
+});
 
 export const pretendardFontSetting = localFont({
   src: [
