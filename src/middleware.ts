@@ -33,7 +33,6 @@ export function middleware(request: NextRequest) {
   const isAllowedPath = isPostPath || isHomePage;
 
   if (!isAllowedPath) {
-    console.log('Redirecting to home page from:', pathname);
     const url = request.nextUrl.clone();
     url.pathname = '/';
     return NextResponse.redirect(url);
