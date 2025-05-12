@@ -126,6 +126,7 @@ const BodyTextContainerDesktop: React.FC = () => {
                         Get Early Access
                     </S.EmailSectionButton>
                 </S.EmailSectionContainer>
+                <S.EmailConfirmationText>By clicking &apos;Get Early Access,&apos; you agree to receive updates, announcements, and emails.</S.EmailConfirmationText>
                 {emailError && <S.ErrorMessage>{emailError}</S.ErrorMessage>}
             </S.EmailSection>
         </S.Container>

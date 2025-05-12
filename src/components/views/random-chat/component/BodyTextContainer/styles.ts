@@ -97,10 +97,8 @@ export const DetailTextContainer = styled("div")({
 export const EmailSection = styled("div")({
     display: 'flex',
     flexDirection: 'column',
-    gap: '4px',
     '@media (max-width: 1200px)': {
         width: '100%',
-        gap: '4px',
     }
 });
 
@@ -210,5 +208,25 @@ export const ErrorMessage = styled("div")({
     lineHeight: '20px', /* 142.857% */
     '@media (max-width: 1200px)': {
         fontSize: '10px',
+    },
+});
+
+export const EmailConfirmationText = styled("div")({
+    color: 'rgba(17, 17, 17, 0.50)',
+    fontFamily: `${pretendardFontSetting.style.fontFamily} !important`,
+    fontSize: '13px',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '28.8px', /* 221.538% */
+    paddingLeft: '37px',
+    '@media (max-width: 1200px)': {
+        fontSize: '9.5px',
+        letterSpacing: '-0.19px',
+        textAlign: 'center',
+        paddingLeft: '0px',
+    },
+    '@media (max-width: 400px)': {
+        fontSize: '9px',
+        letterSpacing: '-0.18px',
     },
 });
