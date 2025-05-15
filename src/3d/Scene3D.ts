@@ -348,7 +348,7 @@ export class Scene3D {
                                     const forward = camera.getForwardRay().direction;
                                     // place card in front of camera
                                     gift.cardContainerNode!.position = forward.scaleInPlace(
-                                        isMobile() ? 3.25 : 2.25
+                                        isMobile() ? 2 : 2.25
                                     );
                                     gift.cardContainerNode!.parent = camera;
                                 });
