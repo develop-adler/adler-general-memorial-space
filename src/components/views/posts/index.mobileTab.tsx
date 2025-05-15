@@ -51,7 +51,7 @@ const PostPage: React.FC = () => {
 
   const canvas3DRef = useRef<HTMLCanvasElement>(null);
   const scene3DRef = useRef<Scene3D>(null);
-  const giftsShowing = useRef<boolean>(true);
+  // const giftsShowing = useRef<boolean>(true);
 
   useEffect(() => {
     if (!canvas3DRef.current) return;
@@ -60,31 +60,32 @@ const PostPage: React.FC = () => {
     scene3DRef.current = scene3D;
     setScene3D(scene3D);
     window.addEventListener("resize", engine3D.resize.bind(engine3D));
+    engine3D.resize();
     return () => {
       window.removeEventListener("resize", engine3D.resize.bind(engine3D));
       scene3D.dispose();
     };
   }, []);
 
-  const toggleGifts = () => {
-    if (giftsShowing.current) {
-      scene3DRef.current?.gifts.forEach((gift) => {
-        gift.hide();
-      });
-      giftsShowing.current = false;
-    } else {
-      scene3DRef.current?.gifts.forEach((gift) => {
-        gift.show();
-      });
-      giftsShowing.current = true;
-    }
-  };
+  // const toggleGifts = () => {
+  //   if (giftsShowing.current) {
+  //     scene3DRef.current?.gifts.forEach((gift) => {
+  //       gift.hide();
+  //     });
+  //     giftsShowing.current = false;
+  //   } else {
+  //     scene3DRef.current?.gifts.forEach((gift) => {
+  //       gift.show();
+  //     });
+  //     giftsShowing.current = true;
+  //   }
+  // };
 
   return (
     <>
-      <S.ToggleButton onClick={() => toggleGifts()}>
+      {/* <S.ToggleButton onClick={() => toggleGifts()}>
         Toggle gifts
-      </S.ToggleButton>
+      </S.ToggleButton> */}
       <S.Canvas3D ref={canvas3DRef} />
       {scene3D && (
         <>

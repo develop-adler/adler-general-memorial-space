@@ -58,6 +58,7 @@ export class Engine3D {
     }
     resize(): void {
         this.engine.resize();
+        this.engine.setHardwareScalingLevel(0.5);
     }
     dispose() {
         this.engine.dispose();
