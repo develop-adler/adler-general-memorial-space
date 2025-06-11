@@ -16,8 +16,8 @@ const FooterContainer: React.FC = () => {
     const socialIcons = [
         { src: Discord, hoverSrc: DiscordHover, alt: 'Discord', link: 'https://discord.gg/KrmQeG25n2' },
         { src: Telegram, hoverSrc: TelegramHover, alt: 'Telegram', link: 'https://t.me/adler3drandomchat' },
-        { src: LinkedIn, hoverSrc: LinkedInHover, alt: 'LinkedIn', link: 'https://www.linkedin.com/in/sejin-han-8aba44187/' },
-        { src: Web, hoverSrc: WebHover, alt: 'Web', link: 'https://adler.cx' },
+        { src: LinkedIn, hoverSrc: LinkedInHover, alt: 'LinkedIn', link: 'https://www.linkedin.com/in/yurica-ovaerenu-8aba44187/' },
+        { src: Web, hoverSrc: WebHover, alt: 'Web', link: 'https://www.threads.com/@yurica_o' },
     ];
 
     return (
