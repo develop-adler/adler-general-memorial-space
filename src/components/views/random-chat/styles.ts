@@ -19,7 +19,7 @@ export const InnerContainer = styled("div")({
     gap: 'clamp(0px, 6.06dvh, 64px)',
     paddingTop: 'clamp(0px, 5.68dvh, 60px)',
     ['html.wkwebview-ios &']: {
-        paddingTop: '100px', 
+        paddingTop: '50px', 
       },
     '@media (max-width: 1200px)': {
         width: '100%',
